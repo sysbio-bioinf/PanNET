@@ -1,0 +1,7 @@
+useDynLib(THRESHOLDerrorMinimizer)
+export(
+	THRESHOLDerrorMinimizer,
+	prediction.threshold,
+	baselearner.threshold
+)
+

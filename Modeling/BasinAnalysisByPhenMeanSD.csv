@@ -1,0 +1,17 @@
+Phenotype,States,Basin_Mean,Basin_SD
+Quiescence,1k,20.54,1.08
+Quiescence,10k,21.3,0.29
+Quiescence,100k,21.89,0.19
+Quiescence,1M,21.96,0.04
+G0_alert,1k,19.48,0.19
+G0_alert,10k,20.03,0.2
+G0_alert,100k,20.79,0.04
+G0_alert,1M,21.32,0.02
+Angio_G0,1k,13.17,0.89
+Angio_G0,10k,13.41,0.36
+Angio_G0,100k,13.07,0.14
+Angio_G0,1M,12.96,0.05
+Angio_G0_Prolif,1k,47.09,0.28
+Angio_G0_Prolif,10k,44.98,0.23
+Angio_G0_Prolif,100k,44.27,0.13
+Angio_G0_Prolif,1M,43.77,0.05
