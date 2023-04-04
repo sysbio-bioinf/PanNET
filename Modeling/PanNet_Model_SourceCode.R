@@ -2,7 +2,7 @@
 #### Werle et al. 2023 - A systems biology approach to define mechanisms, phenotypes, and drivers in PanNETs with a personalized perspective #####
 
 #Set working directory
-setwd("~/User/SourceCode/")
+setwd("/Users/felix/Desktop/PanNET/Modeling/")
 
 #Load required packages
 #We run the simulations with R version 4.2.2 (2022-10-31)
@@ -103,7 +103,7 @@ GSE73514NormalTumor<-read.csv("GSE73514StagesNormalTumor.csv", sep = ",", header
 rocCCNE1 <- roc(GSE73514NormalTumor$Stage, GSE73514NormalTumor$Ccne1, percent=TRUE,partial.auc.correct=FALSE,
                 plot=TRUE,thresholds="best", 
                 print.thres="best", print.auc = TRUE, main="Ccne1")
-wilcox.test(GSE73514NormalTumor$Ccne1~GSE73514NormalTumor$Stage,alterantive=c("two-sided"), paired=F, conf.level=0.95)
+wilcox.test(GSE73514NormalTumor$Ccne1~GSE73514NormalTumor$Stage,alternative=c("two.sided"), paired=F, conf.level=0.95)
 
 Plot<-ggplot(GSE73514NormalTumor, aes(Stage, Ccne1))
 Plot + geom_boxplot(fill="#A6C851")  + labs(x="",y="Ccne1 expression")   +geom_jitter() +geom_hline(yintercept = 8.4, linetype="dashed", color="#AB1212")
@@ -113,7 +113,7 @@ rocE2F <- roc(GSE73514NormalTumor$Stage, GSE73514NormalTumor$E2f1, percent=TRUE,
               plot=TRUE,thresholds="best", 
               print.thres="best", print.auc = TRUE, main="E2f1")
 
-wilcox.test(GSE73514NormalTumor$E2f1~GSE73514NormalTumor$Stage,alterantive=c("two-sided"), paired=F, conf.level=0.95)
+wilcox.test(GSE73514NormalTumor$E2f1~GSE73514NormalTumor$Stage,alternative=c("two.sided"), paired=F, conf.level=0.95)
 
 Plot<-ggplot(GSE73514NormalTumor, aes(Stage, E2f1))
 Plot + geom_boxplot(fill="#A6C851")  + labs(x="",y="E2f1 expression")   +geom_jitter() +geom_hline(yintercept = 8.7, linetype="dashed", color="#AB1212")
@@ -122,7 +122,7 @@ Plot + geom_boxplot(fill="#A6C851")  + labs(x="",y="E2f1 expression")   +geom_ji
 rocCDH1 <- roc(GSE73514NormalTumor$Stage, GSE73514NormalTumor$Cdh1, percent=TRUE,partial.auc.correct=FALSE,
                plot=TRUE,thresholds="best", 
                print.thres="all", print.auc = TRUE, main="Cdh1")
-wilcox.test(GSE73514NormalTumor$Cdh1~GSE73514NormalTumor$Stage,alterantive=c("two-sided"), paired=F, conf.level=0.95)
+wilcox.test(GSE73514NormalTumor$Cdh1~GSE73514NormalTumor$Stage,alternative=c("two.sided"), paired=F, conf.level=0.95)
 
 Plot<-ggplot(GSE73514NormalTumor, aes(Stage, Cdh1))
 Plot + geom_boxplot(fill="#A6C851")  + labs(x="",y="Cdh1 expression")   +geom_jitter() +geom_hline(yintercept = 10.4, linetype="dashed", color="#AB1212")
@@ -132,7 +132,7 @@ rocCIP2A <- roc(GSE73514NormalTumor$Stage, GSE73514NormalTumor$Cip2a, percent=TR
                 plot=TRUE,thresholds="best", 
                 print.thres="best", print.auc = TRUE, main="Cip2a")
 
-wilcox.test(GSE73514NormalTumor$Cip2a~GSE73514NormalTumor$Stage,alterantive=c("two-sided"), paired=F, conf.level=0.95)
+wilcox.test(GSE73514NormalTumor$Cip2a~GSE73514NormalTumor$Stage,alternative=c("two.sided"), paired=F, conf.level=0.95)
 
 Plot<-ggplot(GSE73514NormalTumor, aes(Stage, Cip2a))
 Plot + geom_boxplot(fill="#A6C851")  + labs(x="",y="Cip2a expression")   +geom_jitter() +geom_hline(yintercept = 8.1, linetype="dashed", color="#AB1212")
@@ -142,7 +142,7 @@ rocIGF <- roc(GSE73514NormalTumor$Stage, GSE73514NormalTumor$Igf1, percent=TRUE,
               plot=TRUE,thresholds="best", 
               print.thres="best", print.auc = TRUE, main="Igf1")
 
-wilcox.test(GSE73514NormalTumor$Igf1~GSE73514NormalTumor$Stage,alterantive=c("two-sided"), paired=F, conf.level=0.95)
+wilcox.test(GSE73514NormalTumor$Igf1~GSE73514NormalTumor$Stage,alternative=c("two.sided"), paired=F, conf.level=0.95)
 
 Plot<-ggplot(GSE73514NormalTumor, aes(Stage, Igf1))
 Plot + geom_boxplot(fill="#A6C851")  + labs(x="",y="Igf1 expression")   +geom_jitter() +geom_hline(yintercept = 7.3, linetype="dashed", color="#AB1212")
