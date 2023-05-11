@@ -1020,40 +1020,37 @@
 									</apply>
 								</apply>
 								<apply>
-									<and/>
+									<or/>
 									<apply>
-										<or/>
-										<apply>
-											<eq/>
-											<ci>GSK3B</ci>
-											<cn type="integer">1</cn>
-										</apply>
-										<apply>
-											<eq/>
-											<ci>AMPK</ci>
-											<cn type="integer">1</cn>
-										</apply>
-										<apply>
-											<eq/>
-											<ci>REDD</ci>
-											<cn type="integer">1</cn>
-										</apply>
+										<eq/>
+										<ci>GSK3B</ci>
+										<cn type="integer">1</cn>
 									</apply>
 									<apply>
 										<eq/>
-										<ci>ERK</ci>
-										<cn type="integer">0</cn>
+										<ci>AMPK</ci>
+										<cn type="integer">1</cn>
 									</apply>
 									<apply>
 										<eq/>
-										<ci>AKT</ci>
-										<cn type="integer">0</cn>
+										<ci>REDD</ci>
+										<cn type="integer">1</cn>
 									</apply>
-									<apply>
-										<eq/>
-										<ci>RSK</ci>
-										<cn type="integer">0</cn>
-									</apply>
+								</apply>
+								<apply>
+									<eq/>
+									<ci>ERK</ci>
+									<cn type="integer">0</cn>
+								</apply>
+								<apply>
+									<eq/>
+									<ci>AKT</ci>
+									<cn type="integer">0</cn>
+								</apply>
+								<apply>
+									<eq/>
+									<ci>RSK</ci>
+									<cn type="integer">0</cn>
 								</apply>
 							</apply>
 						</math>

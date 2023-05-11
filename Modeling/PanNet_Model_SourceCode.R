@@ -2,7 +2,7 @@
 #### Werle et al. 2023 - A systems biology approach to define mechanisms, phenotypes, and drivers in PanNETs with a personalized perspective #####
 
 #Set working directory
-setwd("/Users/felix/Desktop/PanNET/Modeling/")
+setwd("~/PanNET-main/Modeling/")
 
 #Load required packages
 #We run the simulations with R version 4.2.2 (2022-10-31)
